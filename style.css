@@ -79,7 +79,7 @@ nav .navbar .menu li {
   transition: all 0.4s ease;
 }
 
-.navbar .menu a:hover {
+.navbar .menu a:hover{
   color: #4070f4;
 }
 
@@ -87,14 +87,20 @@ nav.sticky .menu a {
   color: #FFF;
 }
 
-nav.sticky .menu a:hover {
+nav.sticky .menu a:hover,
+nav.sticky .media-icons a:hover{
   color: #0E2431;
+}
+
+.navbar .media-icons{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
 .navbar .media-icons a {
   color: #4070f4;
   font-size: 18px;
-  margin: 0 6px;
 }
 
 nav.sticky .media-icons a {
@@ -371,12 +377,23 @@ section .button a:hover {
     display: block;
 }
 
-.about .button{
-  justify-self: unset;
+.download-btn a {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s;
 }
 
-.about .button-icon{
-  margin-right: 2px;
+.download-btn a:hover{
+  color: #ff004f;
+}
+
+.download-btn a .button-icon {
+  font-size: 20px;
 }
 
 #experience, #education {
@@ -1187,9 +1204,25 @@ footer .text span a:hover {
     color: #4070f4;
   }
 
-  nav .navbar .media-icons {
-    display: none;
-  }
+nav .navbar {
+  flex-direction: column;
+  align-items: flex-start; /* keep logo on left */
+}
+
+nav .navbar .logo {
+  display: inline-block;
+}
+
+/* When menu is active: show and center under logo */
+nav .navbar .media-icons {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+  width: fit-content;
+  margin-left: 50px;
+}
 
   nav .menu-btn,
   .navbar .menu .cancel-btn {
