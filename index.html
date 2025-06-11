@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio | Anushkaa Ambuj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!-- Animate On Scroll CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- SweetAlert2 (Pop Up) -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Animate On Scroll JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+
+<body>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#home">&lt;Anushkaa Ambuj&gt;</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#techstack">Skills</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Connect</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+      <div class="media-icons">
+        <a href="https://www.linkedin.com/in/anushkaa-ambuj" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/anushkaa-ambuj" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://x.com/AmbujAnush98151"><i class="fab fa-x-twitter" target="_blank"></i></a>
+        <a href="https://www.instagram.com/anushkaaambuj/"><i class="fab fa-instagram" target="_blank"></i></a>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one" data-aos="fade-right" data-aos-delay="100">Hello,</div>
+        <div class="text-two" data-aos="fade-left" data-aos-delay="200">I'm Anushkaa Ambuj</div>
+        <div class="text-three" data-aos="fade-up" data-aos-delay="300">AI &amp; IoT Enthusiast | Full-Stack Developer | Data Scientist | Problem Solver</div>
+        <div class="text-four"  data-aos="fade-up" data-aos-delay="400">Building innovative solutions at the intersection of AI and Web technologies.</div>
+      </div>
+      <!-- <div class="button">
+        <button>Hire Me</button>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title" data-aos="fade-up"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left" data-aos="zoom-in">
+          <img src="images/dp.png" alt="" />
+          <div class="topic">Anushkaa Ambuj</div> 
+          <p>Student @ IIT Jodhpur</p>
+          <p>B.Tech in Engineering Science (CS+EE)</p>
+          <p>
+            SDE Intern @ Johnson Controls | Ex-ML Intern @ Capgemini and @ IBM Research | Computer Science | Machine Learning | IoT
+          </p>
+          <!-- <p>
+            I’m passionate about exploring cutting-edge technologies and turning ideas into impactful
+            solutions.
+            My primary areas of expertise lie in Machine Learning, Software Development and IoT.
+            I love diving into challenges and constantly expanding my skills.
+            I’m always excited to collaborate, innovate, and grow alongside inspiring minds.
+            Here’s a glimpse into my journey of learning and growth!
+          </p> -->
+        </div>
+        <div class="right" data-aos="fade-left">
+          <div class="tab-titles">
+            <p class="tab-links active" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active" id="experience">
+            <ul>
+              <li class="experience-card">
+                <span>Jun - Aug 2024</span>
+                <p class="exp-title intern">Software Developer Intern – Johnson Controls</p>
+                <p>
+                  • Designed and built an end-to-end system enabling non-technical users to query enterprise databases using natural language.<br>
+                  • Leveraged LLMs for semantic parsing and implemented Few-Shot Learning to improve SQL generation accuracy based on custom schemas.<br>
+                  • Developed a responsive Angular 18 UI integrated with Django REST APIs for real-time query execution and results display.<br>
+                  • Eliminated developer dependency for data retrieval by business stakeholders, streamlining access and boosting productivity.
+                </p>
+              </li>
+              <li class="experience-card">
+                <span>Dec 2022</span>
+                <p class="exp-title intern">Data Science Intern – Capgemini</p>
+                <p>
+                  • Optimized sales forecasting and inventory management for a grocery retail client using time-series models.<br>
+                  • Analyzed historical sales, promotions, and product data; engineered features and implemented ARIMA, XGBoost, and LSTM models.<br>
+                  • Improved prediction accuracy by 28.9%, reducing RMSLE from 0.45 to 0.32.<br>
+                  • Delivered a 15% reduction in overstocking and a 10% decrease in stockouts, directly improving operational efficiency and customer satisfaction.
+                </p>
+              <li class="experience-card">
+                <span>Oct 2023 – Oct 2024</span>
+                <p class="exp-title por">Department Secretary – BDS, IIT Jodhpur</p>
+                <p>• Launched ‘Portfolio Prism’ & ‘PeerSphere’ initiatives.<br>
+                  • Managed event planning, budget allocation, and logistics.<br>
+                  • Acted as faculty-student liaison; led a team of 6 to run department outreach.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills">
+            <ul>
+                <li>
+                  <span>Languages</span>
+                  <p>C/C++, Python, SQL, HTML, CSS, JavaScript, TypeScript, Java, R</p>
+                </li>
+                <li>
+                  <span>Frameworks</span>
+                  <p>React, Angular18, Django, Flask, Node.js, Bootstrap</p>
+                </li>
+                <li>
+                  <span>Databases</span>
+                  <p>MySQL, MongoDB</p>
+                </li>
+                <li>
+                  <span>Libraries</span>
+                  <p>TensorFlow, Keras, Scikit-Learn, NumPy, Pandas, Matplotlib, Seaborn, OpenCV</p>
+                </li>
+                <li>
+                  <span>Tools</span>
+                  <p>Git, GitHub, Docker, Kubernetes, Postman, VS Code, Kaggle, Google Colab, Anaconda3,
+                  Tableau, Kerberos</p>
+                </li>
+                <li>
+                  <span>Cloud Platforms &amp; Operating Systems</span>
+                  <p>Azure, Linux</p>
+                </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li class="experience-card">
+                <span>2025</span>
+                <p class="exp-title">Indian Institute of Technology, Jodhpur</p>
+                <p>B.Tech in Engineering Science (CS + EE)<br>
+                  CGPA: 7.71 / 10</p>
+              </li>
+              <li class="experience-card">
+                <span>2021</span>
+                <p class="exp-title">Narayana Junior College</p>
+                <p>Class 12 – Percentage: 98%</p>
+              </li>
+              <li class="experience-card">
+                <span>2019</span>
+                <p class="exp-title">Vikas The Concept School</p>
+                <p>Class 10 – Percentage: 94.8%</p>
+              </li>
+            </ul>
+          </div>
+          <div class="button">
+            <a href="files/Resume.pdf" download>
+              <span class="material-symbols-outlined button-icon">download</span>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Projects -->
+  <section class="projects" id="projects">
+    <div class="content">
+      <div class="heading" data-aos="fade-up">
+        <div class="title"><span>My Projects</span></div>
+        <div class="subtitle">A collection of my most significant work spanning Web development, AI integration, and IoT solutions.</div>
+      </div>
+      <div class="project-carousel" data-aos="fade-up" data-aos-delay="100">
+        <button id="leftButton"><i class="fas fa-chevron-left"></i></button>
+        <div class="project-list">
+          <div class="project-card">
+            <img src="images/project-banners/chatdb.png" />
+            <div class="card-contents">
+              <h3>ChatDB: Text-To-SQL System</h3>
+              <p>A full-stack, LLM-powered interface that enables users to query RDBMS databases effortlessly using plain English.</p>
+              <div class="tech-tags">
+              <span class="tech-tag">Angular 18</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">LLM</span>
+              <span class="tech-tag">Few-Shot Learning</span>
+            </div>
+              <div class="project-links">
+                <a href="https://github.com/your-repo" class="github" target="_blank" title="View on GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://youtube.com/your-video" class="youtube" target="_blank" title="Watch on YouTube">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="#"><button>Know More<i class="fas fa-chevron-right button-icon"></i></button></a>
+            </div>
+          </div>
+          <div class="project-card">
+          <img src="images/project-banners/remify.png" />
+          <div class="card-contents">
+            <h3>REMify: Non-Invasive Sleep Stage Monitoring</h3>
+            <p>An IoT and ML-based system that classifies sleep stages non-invasively using physiological sensor data and real-time data visualization.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">IoT</span>
+              <span class="tech-tag">Raspberry Pi</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/anushkaa-ambuj" class="github" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.youtube.com/watch?v=fr9ZFEEba1I" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="#"><button>Know More<i class="fas fa-chevron-right button-icon"></i></button></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project-banners/chest xray.jpeg" />
+          <div class="card-contents">
+            <h3>Knowledge Distillation of Chest X-rays</h3>
+            <p>Lightweight CNN models for chest X-ray diagnosis built using hierarchical knowledge distillation on medical image datasets.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">NIH Dataset</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/anushkaa-ambuj" class="github" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.youtube.com/watch?v=i3BFJhQx4WQ" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="#"><button>Know More<i class="fas fa-chevron-right button-icon"></i></button></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project-banners/smarthome.jpeg" />
+          <div class="card-contents">
+            <h3>Smart Home Database & Visualization</h3>
+            <p>A MongoDB-backed data pipeline and interactive Tableau dashboards for smart home automation and real-time decision-making.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Tableau</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/anushkaa-ambuj" class="github" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.youtube.com/watch?v=fr9ZFEEba1I" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="#"><button>Know More<i class="fas fa-chevron-right button-icon"></i></button></a>
+          </div>
+        </div>
+      </div>
+        <button id="rightButton"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="pagination-dots" id="paginationDots"></div>
+      <div class="button" data-aos="zoom-in"><a href="pages/projects.html">See More</a></div>
+    </div>
+  </section>
+
+  <!-- My Services Section Start -->
+  <section class="services" id="expertise">
+    <div class="content">
+      <div class="title" data-aos="fade-up"><span>My Expertise <a href="pages/courses.html"><i class="fas fa-external-link-alt"></i></a></span></div>
+      <div class="boxes">
+        <div class="box" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon"><i class="fas fa-desktop"></i></div>
+          <div class="topic">Web Devlopment</div>
+          <p>Crafting responsive, user-friendly web applications with modern front-end and back-end technologies to create seamless digital experiences.</p>
+          <a href="#" target="_blank">Explore More</a>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon"><i class="fas fa-robot"></i></div>
+          <div class="topic">Machine Learning</div>
+          <p>Designing intelligent systems that learn from data to solve complex problems, from prediction to automation, using advanced algorithms and models.</p>
+          <a href="#" target="_blank">Explore More</a>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon"><i class="fas fa-chart-line"></i></div>
+          <div class="topic">Data Science</div>
+          <p>Transforming raw data into actionable insights through data analysis, visualization, and statistical modeling to drive informed decisions.</p>
+          <a href="#" target="_blank">Explore More</a>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon"><i class="fas fa-code"></i></div>
+          <div class="topic">Programming & Data Structures</div>
+          <p>Expertise in coding and algorithmic problem solving using fundamental data structures and optimized algorithms.</p>
+          <a href="#" target="_blank">Explore More</a>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-delay="500">
+          <div class="icon"><i class="fas fa-database"></i></div>
+          <div class="topic">Database Management Systems</div>
+          <p>Designing and optimizing relational and NoSQL databases for efficient data storage, retrieval, and integrity.</p>
+          <a href="#" target="_blank">Explore More</a>
+        </div>
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+          <div class="icon"><i class="fas fa-microchip"></i></div>
+          <div class="topic">Internet of Things (IoT)</div>
+          <p>Connecting smart devices and sensors to enable automation and real-time data exchange in diverse applications.</p>
+          <a href="#" target="_blank">Explore More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Tech Stack Section Start -->
+  <section class="skills" id="techstack">
+    <div class="content">
+      <div class="heading" data-aos="fade-up">
+        <div class="title"><span>My Tech Stack</span></div>
+        <div class="subtitle">The technologies, frameworks, and tools I work with to build robust and scalable applications.</div>
+      </div>
+      <main class="container">
+        <div class="techstack" data-aos="zoom-in" data-aos-delay="100">
+              <h2>Languages</h2><hr>
+              <div class="items">
+                <div class="item"><div class="item-logo"><i class="fas fa-code"></i></div>C/C++</div>
+                <div class="item"><div class="item-logo"><i class="fab fa-python"></i></div>Python</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-database"></i></div>SQL</div>
+                <div class="item"><div class="item-logo"><i class="fab fa-java"></i></div>Java</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-chart-line"></i></div>R</div>
+              </div>
+            </div>
+
+            <div class="techstack" data-aos="zoom-in" data-aos-delay="200">
+              <h2>Frontend</h2><hr>
+              <div class="items">
+                <div class="item"><div class="item-logo"><i class="fab fa-html5"></i></div>HTML</div>
+                <div class="item"><div class="item-logo"><i class="fab fa-css3-alt"></i></div>CSS</div>
+                <div class="item"><div class="item-logo"><i class="fab fa-js-square"></i></div>JavaScript</div>
+                <div class="item"><div class="item-logo"><i class="fab fa-angular"></i></div>Angular</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-code"></i></div>TypeScript</div>
+                <div class="item"><div class="item-logo"><i class="fab fa-bootstrap"></i></div>Bootstrap</div>
+              </div>
+            </div>
+            <div class="techstack" data-aos="zoom-in" data-aos-delay="300">
+              <h2>Backend</h2><hr>
+              <div class="items">
+                <div class="item"><div class="item-logo"><i class="fas fa-server"></i></div>Django</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-fire"></i></div>Flask</div>      
+                <div class="item"><div class="item-logo"><i class="fas fa-fire"></i></div>FastAPI</div>          
+                <div class="item"><div class="item-logo"><i class="fab fa-node-js"></i></div>Node.js</div>
+              </div>
+            </div>
+
+            <div class="techstack" data-aos="zoom-in" data-aos-delay="400">
+              <h2>Databases</h2><hr>
+              <div class="items">
+                <div class="item"><div class="item-logo"><i class="fas fa-database"></i></div>MySQL</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-leaf"></i></div>MongoDB</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-database"></i></div>PostgresSQL</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-leaf"></i></div>Redis</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-database"></i></div>Neo4j</div>
+              </div>
+            </div>
+
+            <div class="techstack" data-aos="zoom-in" data-aos-delay="500">
+              <h2>AI & ML</h2><hr>
+              <div class="items">
+                <div class="item"><div class="item-logo"><i class="fas fa-brain"></i></div>PyTorch</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-brain"></i></div>TensorFlow</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-brain"></i></div>Keras</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-project-diagram"></i></div>Scikit-Learn</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-camera"></i></div>OpenCV</div>
+              </div>
+            </div>
+
+            <div class="techstack" data-aos="zoom-in" data-aos-delay="600">
+              <h2>Data Science</h2><hr>
+              <div class="items">
+                <div class="item"><div class="item-logo"><i class="fas fa-calculator"></i></div>NumPy</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-table"></i></div>Pandas</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-chart-bar"></i></div>Matplotlib</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-wave-square"></i></div>Seaborn</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-chart-pie"></i></div>Tableau</div>
+              </div>
+            </div>
+
+            <div class="techstack" data-aos="zoom-in" data-aos-delay="700">
+              <h2>Devops & Cloud</h2><hr>
+              <div class="items">
+                <div class="item"><div class="item-logo"><i class="fab fa-docker"></i></div>Docker</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-network-wired"></i></div>Kubernetes</div>
+                <div class="item"><div class="item-logo"><i class="fab fa-microsoft"></i></div>Azure</div>
+                <div class="item"><div class="item-logo"><i class="fab fa-git-alt"></i></div>Git</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-lock"></i></div>Kerberos</div>
+              </div>
+            </div>
+
+            <div class="techstack" data-aos="zoom-in" data-aos-delay="800">
+              <h2>Tools</h2><hr>
+              <div class="items">
+                <div class="item"><div class="item-logo"><i class="fas fa-code"></i></div>VS Code</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-box"></i></div>Anaconda3</div>
+                <div class="item"><div class="item-logo"><i class="fab fa-github"></i></div>GitHub</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-vial"></i></div>Postman</div>
+                <div class="item"><div class="item-logo"><i class="fas fa-vial"></i></div>Selenium</div>
+                <div class="item"><div class="item-logo"><i class="fab fa-linux"></i></div>Linux</div>
+              </div>
+            </div>
+      </main>
+    </div>
+  </section>
+
+  <section class="publications" id="publications">
+    <div class="content">
+      <div class="heading" data-aos="fade-up">
+        <div class="title"><span>My Publications & Articles</span></div>
+        <div class="subtitle">Dive into my world of research, insights, and technical writing. Click below to explore my latest publications.</div>
+      </div>
+      <div class="carousel" data-aos="fade-up" data-aos-delay="100">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-item" onclick="window.open('https://www.linkedin.com/newsletters/7277667559649288192/', '_blank')" data-type="newsletter">
+            <div class="card" style="background-image: url('images/newsletters/the_art_of_prog.png');">
+              <div class="card-header">
+                <span class="tag">Newsletter</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" onclick="window.open('https://www.linkedin.com/newsletters/7292935065095782401/', '_blank')" data-type="newsletter">
+            <div class="card" style="background-image: url('images/newsletters/the_epoch_times.png');">
+              <div class="card-header">
+                <span class="tag newsletter">Newsletter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title" data-aos="fade-up"><span>Get In Touch</span></div>
+      <div class="contact-container">
+        <div class="contact-card" data-aos="fade-right" data-aos-delay="100">
+        <h2 class="topic">Contact Information</h2>
+        <p class="topic-info">Feel free to reach out to me through any of these channels</p>
+        <div class="info-block">
+          <i class="fas fa-envelope icon"></i>
+          <div>
+            <strong>Email</strong><br />
+            anushkaa.iitj@gmail.com<br />
+            ambuj.1@iitj.ac.in
+          </div>
+        </div>
+        <div class="info-block">
+          <i class="fa-solid fa-location-dot icon"></i>
+          <div><strong>Location</strong><br />Hyderabad, Telangana, India</div>
+        </div>
+
+        <hr />
+
+        <p style="font-size: 18px; font-weight: 500; color: #1D4ED8;">Connect with Me</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/anushkaa-ambuj" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/anushkaa-ambuj" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.kaggle.com/anushkaaambuj" title="Kaggle" target="_blank"><i class="fab fa-kaggle"></i></a>
+          <a href="https://leetcode.com/u/anushkaa_ambuj/" title="Leetcode" target="_blank">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card" data-aos="fade-left" data-aos-delay="200">
+        <h2 class="topic">Send Me a Message</h2>
+        <p class="topic-info">I'll get back to you as soon as possible</p>
+        <form class="contact-form" id="contact-form">
+          <div class="input-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" placeholder="Subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section Start -->
+  <footer>
+    <div class="text">
+      <!-- <span>Created By <a href="#">CodingLab</a> | &#169; 2021 All Rights Reserved</span> -->
+    </div>
+  </footer>
+
+  <script>
+    emailjs.init("v6fFXuu2CL7bidxXN"); // Replace with your actual public key from EmailJS dashboard
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

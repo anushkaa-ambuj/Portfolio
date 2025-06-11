@@ -1,0 +1,40 @@
+.experience {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.experience .num {
+  color: #0E2431;
+  font-size: 80px;
+}
+
+.experience .exp {
+  color: #0E2431;
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 6px;
+}
+
+.skills-details .boxes {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-details .box {
+  width: calc(100% / 2 - 20px);
+  margin: 20px 0;
+}
+
+.skills-details .boxes .topic {
+  font-size: 20px;
+  color: #4070f4;
+}
+
+.skills-details .boxes .per {
+  font-size: 60px;
+  color: #4070f4;
+}

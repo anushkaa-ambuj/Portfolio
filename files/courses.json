@@ -1,0 +1,84 @@
+[
+  {
+    "id": "a1",
+    "domain": "Artificial Intelligence",
+    "orgLogo": "https://www.simplilearn.com/ice9/new_logo.svgz",
+    "courseTitle": "The Ultimate Deep Learning Tutorial",
+    "courseLink": "https://www.simplilearn.com/tutorials/deep-learning-tutorial",
+    "points": ["What is Deep Learning", "The Best Introduction to Deep Learning", "Deep Learning Applications", "What is Neural Network", "Neural Networks Tutorial", "Deep Learning Frameworks", "Deep Learning Algorithms", "Deep Learning With Python", "What is Tensorflow", "Install TensorFlow on Ubuntu", "What Is TensorFlow 2.0", "TensorFlow Tutorial for Beginners", "Convolutional Neural Network", "Recurrent Neural Network", "What GANs Are", "What Is Keras", "Deep Learning Interview Questions"]
+  },
+  {
+    "id": "a2",
+    "domain": "Artificial Intelligence",
+    "orgLogo": "../images/course-logo/statquest.jpg",
+    "courseTitle": "Neural Networks / Deep Learning",
+    "courseLink": "https://youtube.com/playlist?list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1&si=KngQANhQ-5RxkQEe",
+    "points": [],
+    "profImage": "../images/course-profs/josh starmer.jpg",
+    "profLink": "https://media.licdn.com/dms/image/v2/D4E03AQER9c8L0rVHUg/profile-displayphoto-shrink_400_400/B4EZQXf2NwHEAg-/0/1735561012507?e=1755129600&v=beta&t=WGjN_2X56D7FuEKepldjVDe7hnGBsHC6XX84juFEcuQ",
+    "profName": "Joshua Starmer PhD",
+    "profPosition": "Founder and CEO at StatQuest with Josh Starmer"
+  },
+  {
+    "id": "a3",
+    "domain": "Artificial Intelligence",
+    "orgLogo": "../images/course-logo/statquest.jpg",
+    "courseTitle": "Machine Learning",
+    "courseLink": "https://youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF&si=m4X1NptZAMXi9FEV",
+    "points": [],
+    "profImage": "https://media.licdn.com/dms/image/v2/D4E03AQER9c8L0rVHUg/profile-displayphoto-shrink_400_400/B4EZQXf2NwHEAg-/0/1735561012507?e=1755129600&v=beta&t=WGjN_2X56D7FuEKepldjVDe7hnGBsHC6XX84juFEcuQ",
+    "profLink": "https://www.linkedin.com/in/joshua-starmer-phd/",
+    "profName": "Joshua Starmer PhD",
+    "profPosition": "Founder and CEO at StatQuest with Josh Starmer"
+  },
+  {
+    "id": "p1",
+    "domain": "Programming",
+    "orgLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/YouTube_full-color_icon_%282024%29.svg/250px-YouTube_full-color_icon_%282024%29.svg.png",
+    "courseTitle": "OOPs Tutorial in One Shot | Object Oriented Programming | in C++ Language",
+    "courseLink": "https://youtu.be/mlIUKyZIUUU?si=f1Ssu4yPgXCitJml",
+    "points": [],
+    "profImage": "https://media.licdn.com/dms/image/v2/D4D03AQHGNAxeyJhZbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1685972237021?e=1755129600&v=beta&t=Vyel6JmXrRkB7VDomNUlhZEmuwhy4zBpAuDbUfLbzjk",
+    "profName": "Shradha Khapra",
+    "profLink": "https://www.linkedin.com/in/shradha-khapra/",
+    "profPosition": "Co-Founder, Apna College",
+    "courseWorkLink": "https://github.com/anushkaa-ambuj/OOPs"
+  },
+  {
+    "id": "p2",
+    "domain": "Programming",
+    "orgLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/YouTube_full-color_icon_%282024%29.svg/250px-YouTube_full-color_icon_%282024%29.svg.png",
+    "courseTitle": "Java OOPs in One Shot | Object Oriented Programming | Java Language",
+    "courseLink": "https://youtu.be/bSrm9RXwBaI?si=w07OgGhYPc-Du9Ff",
+    "points": [],
+    "profImage": "https://media.licdn.com/dms/image/v2/D4D03AQHGNAxeyJhZbQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1685972237021?e=1755129600&v=beta&t=Vyel6JmXrRkB7VDomNUlhZEmuwhy4zBpAuDbUfLbzjk",
+    "profName": "Shradha Khapra",
+    "profLink": "https://www.linkedin.com/in/shradha-khapra/",
+    "profPosition": "Co-Founder, Apna College",
+    "courseWorkLink": "https://github.com/anushkaa-ambuj/OOPs"
+  },
+  {
+    "id": "p3",
+    "domain": "Programming",
+    "orgLogo": "https://nptel.ac.in/_app/immutable/assets/logo-m.CNHeS_sM.jpg",
+    "courseTitle": "The Joy of Computing using Python",
+    "courseLink": "https://archive.nptel.ac.in/courses/106/106/106106182/",
+    "points": [],
+    "profImage": "https://media.licdn.com/dms/image/v2/C5103AQGeaEdIEXJtcA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516961620287?e=1755129600&v=beta&t=BilGXvFCaMKhGa3Fu2XR64MEJxzrxHrsqQGAn2VOWg0",
+    "profName": "Sudarshan Iyengar ",
+    "profLink": "https://www.linkedin.com/in/sudarshan-iyengar-3560b8145/",
+    "profPosition": "Assistant Professor, IIT Ropar"
+  },
+  {
+    "id": "s1",
+    "domain": "Software Development",
+    "orgLogo": "https://d1g0iq4cbcvjcd.cloudfront.net/topics/images/ScalerTopics_Logo.svg",
+    "courseTitle": "Operating System Course: Learn Fundamentals of Operating System",
+    "courseLink": "https://www.scaler.com/topics/course/free-operating-system-course/",
+    "points": [],
+    "profImage": "https://www.scaler.com/topics/images/srikant-varma_instructor.webp",
+    "profName": "Srikanth Varma",
+    "profLink": "https://www.linkedin.com/in/cskvarma/",
+    "profPosition": ""
+  }
+]

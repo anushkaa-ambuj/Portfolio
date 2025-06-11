@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="projects.css" />
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <!-- navgaition menu -->
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="../index.html">Anushkaa Ambuj.</a></div>
+            <div class="media-icons">
+                <a href="https://www.linkedin.com/in/anushkaa-ambuj" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/anushkaa-ambuj" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-facebook-f" target="_blank"></i></a>
+                <a href="#"><i class="fab fa-twitter" target="_blank"></i></a>
+                <a href="#"><i class="fab fa-instagram" target="_blank"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="content">
+            <div class="title"><span>Projects</span></div>
+            <div id="filter-search-container">
+            <select id="domain-filter">
+                <option value="All">All Domains</option>
+            </select>
+            <input 
+                type="text" 
+                id="search-bar" 
+                placeholder="Search projects by title, tech stack, or domain..."
+            />
+            </div>
+            <section id="project-cards"></section>
+        </div>
+    </section>
+
+    <script src="projects.js"></script>
+</body>
+</html>
