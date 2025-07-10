@@ -2,13 +2,14 @@
 let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-btn");
 
+// Show/hide sticky navigation and scroll button based on scroll position
 window.onscroll = function () {
   if (document.documentElement.scrollTop > 20) {
     nav.classList.add("sticky");
-    if (scrollBtn) scrollBtn.style.display = "block";
+    scrollBtn.style.display = "block";
   } else {
     nav.classList.remove("sticky");
-    if (scrollBtn) scrollBtn.style.display = "none";
+    scrollBtn.style.display = "none";
   }
 };
 
@@ -56,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((coursesData) => {
       const domains = {};
 
-      // Group courses by domain
       coursesData.forEach((course) => {
         if (!domains[course.domain]) {
           domains[course.domain] = [];
@@ -64,25 +64,26 @@ document.addEventListener("DOMContentLoaded", () => {
         domains[course.domain].push(course);
       });
 
-      // Add "Show All" filter
+      // Add "Show All" button
       const allButton = document.createElement("a");
       allButton.innerText = "Show All";
       allButton.className = "filter active";
       allButton.dataset.filter = "all";
       allButton.style.marginRight = "15px";
+      allButton.style.cursor = "pointer";
       filterContainer.appendChild(allButton);
 
-      // Add domain filters
+      // Add filter buttons for each domain
       Object.keys(domains).forEach((domain) => {
         const filterButton = document.createElement("a");
         filterButton.innerText = domain;
         filterButton.className = "filter";
         filterButton.dataset.filter = domain;
         filterButton.style.marginRight = "15px";
+        filterButton.style.cursor = "pointer";
         filterContainer.appendChild(filterButton);
       });
 
-      // Generate course cards
       Object.keys(domains).forEach((domain) => {
         const domainHeading = document.createElement("div");
         domainHeading.className = `domain-heading`;
@@ -94,23 +95,25 @@ document.addEventListener("DOMContentLoaded", () => {
         const domainSection = document.createElement("div");
         domainSection.className = `domain-container`;
         domainSection.dataset.domain = domain;
+        domainSection.style.display = "grid";
+        domainSection.style.gridTemplateColumns = "repeat(3, 1fr)";
+        domainSection.style.gap = "20px";
 
         domains[domain].forEach((course) => {
           const card = document.createElement("div");
           card.className = "card";
-          card.setAttribute("data-aos", "zoom-in"); // Add AOS animation
           card.style.setProperty("--neon-color", accentColors[domain] || "#fff");
           card.style.setProperty("--lighter-neon-color", lighterColors[domain] || "#fff");
 
           const isYouTube = course.courseLink && course.courseLink.includes("youtube.com");
-          let mediaEmbed = "";
+          let videoEmbed = "";
 
           if (isYouTube) {
             const embedURL = getYouTubeEmbedURL(course.courseLink);
             if (embedURL) {
-              mediaEmbed = `
+              videoEmbed = `
                 <div class="video-embed">
-                  <iframe width="100%" height="250"
+                  <iframe width="100%" height="250px"
                     src="${embedURL}"
                     frameborder="0" 
                     allowfullscreen>
@@ -118,53 +121,43 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
               `;
             }
-          } else if (course.bannerImg) {
-            mediaEmbed = `
-              <div class="banner">
-                <img src="${course.bannerImg}" alt="${course.courseTitle} Banner">
-              </div>
-            `;
           }
 
           card.innerHTML = `
             <div class="body">
-              ${mediaEmbed}
+              ${videoEmbed}
               <div class="meta">
-                ${course.meta && course.meta.description 
-                  ? `<p class="description">${course.meta.description}</p>` : ""}
-                ${course.meta && course.meta.points && course.meta.points.length > 0 
-                  ? `<ul>${course.meta.points.map(point => `<li>${point}</li>`).join('')}</ul>` : ""}
+                <ul>
+                  ${course.points.map((point) => `<li>${point}</li>`).join("")}
+                </ul>
               </div>
             </div>
-
+            
             <div class="footer">
               <div class="heading">
+                ${course.courseCode ? `<p class="course-code">${course.courseCode}</p>` : ""}
                 ${course.courseLink
                   ? `<a href="${course.courseLink}" target="_blank"><h3>${course.courseTitle}</h3></a>`
-                  : `<h3>${course.courseTitle}</h3>`}
+                  : `<h3>${course.courseTitle}</h3>`
+                }
               </div>
-
               <div class="footer-content">
                 <div class="professor">
-                  <img src="${course.prof.image || ""}" alt="${course.prof.title || ""}">
+                  <img src="${course.profImage}" alt="${course.profName}">
                   <div>
-                    <h4><a href="${course.prof.link || "#"}" target="_blank">${course.prof.title || ""}</a></h4>
-                    <p>${course.prof.subtitle || ""}</p>
+                    <h4><a href="${course.profLink}" target="_blank">${course.profName}</a></h4>
+                    <p>${course.profPosition}</p>
                   </div>
                 </div>
-
-                ${(course.repoLink || course.demoLink || course.docLink || course.videoLink) ? `
                 <div class="card-options">
                   <button class="dots-btn">⋮</button>
                   <div class="dropdown-menu">
-                    ${course.repoLink ? `<a href="${course.repoLink}" target="_blank"><i class="fa-solid fa-code-branch"></i> My Repo</a>` : ""}
-                    ${course.demoLink ? `<a href="${course.demoLink}" target="_blank"><i class="fa-solid fa-display"></i> Live Demo</a>` : ""}
-                    ${course.docLink ? `<a href="${course.docLink}" target="_blank"><i class="fa-solid fa-book"></i> Docs</a>` : ""}
-                    ${course.videoLink ? `<a href="${course.videoLink}" target="_blank"><i class="fa-brands fa-youtube"></i> Video</a>` : ""}
+                    ${course.repoLink ? `<a href="${course.repoLink}" target="_blank">My Repo</a>` : ""}
+                    <a href="#">Save</a>
+                    <a href="#">Share</a>
+                    <a href="#">Report</a>
                   </div>
                 </div>
-              ` : ``}
-
               </div>
             </div>
           `;
@@ -175,7 +168,6 @@ document.addEventListener("DOMContentLoaded", () => {
         coursesContainer.appendChild(domainSection);
       });
 
-      // Filter logic
       const filterButtons = filterContainer.querySelectorAll(".filter");
       const domainHeadings = coursesContainer.querySelectorAll(".domain-heading");
       const domainSections = coursesContainer.querySelectorAll(".domain-container");
@@ -197,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
 
-      // Dropdown toggle logic
+      // ✅ DROPDOWN: Now the dots exist, so add listeners
       document.querySelectorAll('.dots-btn').forEach(btn => {
         btn.addEventListener('click', function(e) {
           e.stopPropagation();
@@ -206,16 +198,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
 
+      // ✅ Close all dropdowns when clicking outside
       document.addEventListener('click', function() {
         document.querySelectorAll('.dropdown-menu').forEach(menu => {
           menu.style.display = 'none';
         });
-      });
-
-      // ✅ Initialize AOS animations
-      AOS.init({
-        duration: 800,
-        once: true
       });
 
     })

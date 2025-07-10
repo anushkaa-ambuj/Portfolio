@@ -1,17 +1,22 @@
-*{
+/* =======================
+   Base Styles
+======================= */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
   scroll-behavior: smooth;
+  text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
   color: #222;
 }
 
-/* Custom Scroll Bar CSS */
+/* =======================
+   Custom Scrollbar
+======================= */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -23,14 +28,16 @@ body{
 ::-webkit-scrollbar-thumb {
   background: #6e93f7;
   border-radius: 12px;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #4070f4;
 }
 
-/* navbar styling */
+/* =======================
+   Navbar
+======================= */
 nav {
   position: fixed;
   width: 100%;
@@ -47,46 +54,45 @@ nav.sticky {
 
 nav .navbar {
   width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
 }
 
-nav .navbar .logo a {
+nav .logo a {
   font-weight: 500;
   font-size: 35px;
   color: #4070f4;
 }
 
-nav.sticky .navbar .logo a {
+nav.sticky .logo a {
   color: #fff;
 }
 
-nav .navbar .menu {
+nav .menu {
   display: flex;
-  position: relative;
 }
 
-nav .navbar .menu li {
+nav .menu li {
   list-style: none;
   margin: 0 20px;
 }
 
-.navbar .menu a {
+nav .menu a {
   font-size: 18px;
   font-weight: 500;
   color: #0E2431;
   padding: 6px 0;
-  transition: all 0.4s ease;
+  transition: color 0.4s ease;
 }
 
-.navbar .menu a:hover {
+nav .menu a:hover {
   color: #4070f4;
 }
 
 nav.sticky .menu a {
-  color: #FFF;
+  color: #fff;
 }
 
 nav.sticky .menu a:hover {
@@ -94,23 +100,24 @@ nav.sticky .menu a:hover {
 }
 
 .navbar .media-icons a {
-  color: #4070f4;
   font-size: 18px;
   margin: 0 6px;
+  color: #4070f4;
 }
 
 nav.sticky .media-icons a {
-  color: #FFF;
+  color: #fff;
 }
 
-/* Section Styling */
+/* =======================
+   Sections
+======================= */
 section {
   padding: 20px 0;
 }
 
 section .content {
   margin: 40px auto;
-  font-family: 'Poppins', sans-serif;
 }
 
 section .title {
@@ -120,11 +127,11 @@ section .title {
 }
 
 section .title span {
-  color: #0E2431;
-  font-size: 30px;
-  font-weight: 600;
   position: relative;
   padding-bottom: 8px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #0E2431;
 }
 
 section .title span::before,
@@ -132,28 +139,31 @@ section .title span::after {
   content: '';
   position: absolute;
   height: 3px;
-  width: 100%;
   background: #4070f4;
   left: 0;
+}
+
+section .title span::before {
+  width: 100%;
   bottom: 0;
 }
 
 section .title span::after {
-  bottom: -7px;
   width: 70%;
+  bottom: -7px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-section .subtitle{
+section .subtitle {
   font-size: 18px;
   text-align: center;
 }
 
 section .topic {
-  color: #0E2431;
   font-size: 25px;
   font-weight: 500;
+  color: #0E2431;
   margin-bottom: 10px;
 }
 
@@ -166,36 +176,35 @@ section .button button,
 section .button a {
   display: inline-flex;
   align-items: center;
-  outline: none;
   padding: 10px 16px;
-  border-radius: 6px;
   font-size: 16px;
   font-weight: 500;
+  border-radius: 6px;
   background: #4070f4;
   color: #fff;
   border: 2px solid transparent;
   cursor: pointer;
-  text-decoration: none;
   transition: all 0.4s ease;
 }
 
-/* ----------------Filter Links---------------- */ 
-#filter-container{
+/* =======================
+   Filter Links
+======================= */
+#filter-container {
   display: flex;
-  justify-content: start;
-  margin: 10px 10%;
-  margin-bottom: 40px;
+  justify-content: flex-start;
+  padding: 10px 80px;
+  margin-bottom: 20px;
 }
 
 #filter-container a {
-  margin-right: 15px;
-  cursor: pointer;
-  font-size: 1em;
-  text-decoration: none;
   padding: 5px 10px;
+  margin-right: 15px;
+  font-size: 1em;
   border: 2px solid transparent;
   border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #filter-container a.active {
@@ -208,20 +217,21 @@ section .button a {
   color: #000;
 }
 
-/* ------------Courses Section---------------- */
-
+/* =======================
+   Courses Section
+======================= */
 #courses-container {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 10%;
+  padding: 0 80px;
+  overflow-x: hidden;
 }
 
 .domain-heading {
+  text-align: center;
+  text-transform: uppercase;
   font-size: 1.6em;
   font-weight: bold;
-  margin: 20px 0;
-  text-transform: uppercase;
-  text-align: center;
+  padding: 40px 0 20px;
   color: var(--neon-color);
 }
 
@@ -235,9 +245,9 @@ section .button a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #f9f9f9;
+  background: #f9f9f9;
   border-radius: 12px;
-  padding: 20px;
+  overflow: hidden;
   border: 2px solid var(--lighter-neon-color);
   box-shadow: 0 2px 8px var(--neon-color, rgba(0, 255, 255, 0.5));
   transition: box-shadow 0.3s ease;
@@ -247,10 +257,22 @@ section .button a {
   box-shadow: 0 0 20px var(--neon-color, rgba(0, 255, 255, 0.8));
 }
 
+.card .body {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.card .body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .card .heading {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .card .heading img {
@@ -258,10 +280,9 @@ section .button a {
   margin-right: 15px;
 }
 
-.card .heading .course-code {
+.card .course-code {
   font-size: 0.9em;
   color: var(--neon-color);
-  white-space: nowrap;
 }
 
 .card .heading h3 {
@@ -276,11 +297,7 @@ section .button a {
 }
 
 .card .meta {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0px 20px;
+  margin: 0 20px;
 }
 
 .card .meta ul {
@@ -294,33 +311,43 @@ section .button a {
 .card .buttons {
   display: flex;
   justify-content: center;
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 .card .buttons button {
-  margin: 0px 10px;
-  background-color: transparent;
+  margin: 0 10px;
+  background: transparent;
   border: 2px solid var(--neon-color);
   padding: 8px 15px;
   font-size: 0.9em;
   font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 
 .card .buttons button:hover {
-  background-color: var(--neon-color);
+  background: var(--neon-color);
   color: #fff;
 }
 
-.card .footer .professor {
+.card .footer {
+  padding: 0 20px 20px;
+}
+
+.card .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .professor {
   display: flex;
   align-items: center;
   margin-top: 10px;
 }
 
-.card .footer .professor img {
+.card .professor img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -328,66 +355,117 @@ section .button a {
   border: 2px solid var(--neon-color);
 }
 
-.card .footer .professor div h4 {
+.card .professor div h4 {
   margin: 0;
   font-size: 0.9em;
 }
 
-.card .footer .professor div h4 a {
+.card .professor div h4 a{
   color: var(--lighter-neon-color);
-  text-decoration: none;
 }
 
-.card .footer .professor div h4 a:hover {
+.card .professor div h4 a:hover {
   color: #007575;
 }
 
-/* Neon Colors for Domain Sections */
-.card[data-color] {
-  box-shadow: 0 4px 6px var(--neon-color);
+/* === Card Options Container === */
+.card-options {
+  position: relative;
+  display: inline-block;
 }
 
-.card[data-color]:hover {
-  box-shadow: 0 8px 12px var(--neon-color);
+/* === The 3-dots Button === */
+.dots-btn {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 50%;
+  transition: background 0.2s ease;
 }
 
-/* ------------Responsive Media Queries---------------- */
-/* # For Small Screens */
-nav .fa-solid{
+.dots-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* === The Dropdown Menu === */
+.dropdown-menu {
+  display: none; 
+  position: absolute;
+  right: 0;
+  bottom: 120%;
+  min-width: 140px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+  background: var(--lighter-neon-color);
+  color: #fff;
+}
+
+/* =======================
+   Responsive Media Queries
+======================= */
+nav .fa-solid {
   display: none;
 }
 
-@media only screen and (max-width: 600px){
-  .header-text{
-      margin-top: 100%;
-      font-size: 16px;
+@media only screen and (max-width: 600px) {
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
   }
 
-  nav .fa-solid{
-      display: block;
-      font-size: 25px;
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
   }
-  nav ul{
-      background: #ff004f;
-      position: fixed;
-      top: 0;
-      right: -200px;
-      width: 200px;
-      height: 100vh;
-      padding-top: 50px;
-      z-index: 2;
+
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
   }
-  nav ul li{
-      display: block;
-      margin: 25px;
+
+  nav ul li {
+    display: block;
+    margin: 25px;
   }
-  nav ul .fa-solid{
-      position: absolute;
-      top: 25px;
-      left: 25px;
-      cursor: pointer;
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
   }
-  .copyright{
-      font-size: 14px;
+
+  .copyright {
+    font-size: 14px;
   }
 }
