@@ -1,0 +1,44 @@
+[
+    {
+        "title": "ChatDB: Text-To-SQL System",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "techStack": ["Angular", "Angular Material", "Bootstrap", "Django", "REST", "RDBMS", "MySQL", "LLM", "Few-Shot Learning"],
+        "domain": ["FullStack", "NLP"],
+        "image": "../images/projects/chatdb.png",
+        "links": { 
+            "repo": "https://github.com/anushkaa-ambuj/chatDB", 
+            "doc": "https://www.linkedin.com/in/anushkaa-ambuj/overlay/1750183472600/single-media-viewer?type=DOCUMENT&profileId=ACoAADgS1t0BUPHQfTichuAkSohahrzbfsNyp50&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BfKS9JW6gT8GtLNZ3vWorbA%3D%3D" 
+        },
+        "modalContent": {
+            "ps": "hi"    
+        },
+        "startDate": "2024-06-01",
+        "endDate": "2024-08-15"
+    },
+    {
+        "title": "REMify: Non-Invasive Sleep Stage Monitoring System",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "techStack": ["Python", "Flask", "PostgreSQL"],
+        "domain": ["Fintech", "EdTech"],
+        "image": "../images/projects/remify.png",
+        "links": { "doc":"https://www.linkedin.com/in/anushkaa-ambuj/overlay/projects/2132474371/multiple-media-viewer?profileId=ACoAADgS1t0BUPHQfTichuAkSohahrzbfsNyp50&treasuryMediaId=1750184164357&type=DOCUMENT&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BWPGcX5Y5SiK2V%2B4do9suVA%3D%3D"},
+        "startDate": "2024-10-01",
+        "endDate": "2024-11-30"
+    },
+    {
+        "title": "HKD",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "techStack": ["Python", "Flask", "PostgreSQL"],
+        "domain": ["EdTech"],
+        "image": "../images/projects/chatdb.png",
+        "links": { "demo": "#", "repo": "#" }
+    },
+    {
+        "title": "Cool",
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "techStack": ["Python", "Flask", "PostgreSQL"],
+        "domain": ["EdTech"],
+        "image": "../images/projects/chatdb.png",
+        "links": { "demo": "#", "repo": "#" }
+    }
+]

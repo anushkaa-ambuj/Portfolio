@@ -271,12 +271,6 @@ section .button a:hover {
   line-height: 1.5;
 }
 
-.project-dates {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 5px;
-}
-
 .tech-stack {
   font-size: 13px;
   color: #555;

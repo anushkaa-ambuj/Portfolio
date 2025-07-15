@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
     <!-- navgaition menu -->
@@ -40,6 +43,21 @@
             <section id="project-cards"></section>
         </div>
     </section>
+    <div id="project-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-ps"></p>
+            <p id="modal-dates"></p>
+            <img id="modal-image" src="" alt="">
+            <p id="modal-description"></p>
+            <p><strong>Tech Stack:</strong> <span id="modal-tech-stack"></span></p>
+            <div class="card-links">
+            <a id="modal-demo-link" href="#" target="_blank">View Demo</a>
+            <a id="modal-repo-link" href="#" target="_blank">View Repo</a>
+            </div>
+        </div>
+    </div>
 
     <script src="projects.js"></script>
 </body>
