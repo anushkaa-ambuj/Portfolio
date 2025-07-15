@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "Artificial Intelligence": "#6A1B9A",
     "Data Science": "#E11D48",
     "Cybersecurity": "#e64a19",
-    "Programming": "#0277bd"
+    "Programming": "#0277bd",
+    "CS Fundamentals": "#0D47A1"
   };
 
   const lighterColors = {
@@ -29,7 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "Artificial Intelligence": "#8e24aa",
     "Data Science": "#FB7185",
     "Cybersecurity": "#ff5722",
-    "Programming": "#039be5"
+    "Programming": "#039be5",
+    "CS Fundamentals": "#3949ab"
   };
 
   function getYouTubeEmbedURL(url) {
@@ -146,7 +148,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
               <div class="footer-content">
                 <div class="professor">
-                  <img src="${course.prof.image || ""}" alt="${course.prof.title || ""}">
+                  ${course.prof.image ? `<img src="${course.prof.image || ""}" alt="${course.prof.title || ""}">` :
+                    `<img src="${course.orgLogo || ""}" alt="${course.prof.subtitle || ""}">` 
+                  }
                   <div>
                     <h4><a href="${course.prof.link || "#"}" target="_blank">${course.prof.title || ""}</a></h4>
                     <p>${course.prof.subtitle || ""}</p>

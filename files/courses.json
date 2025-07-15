@@ -35,7 +35,7 @@
     "courseTitle": "The Ultimate Deep Learning Tutorial",
     "courseLink": "https://www.simplilearn.com/tutorials/deep-learning-tutorial",
     "prof": {
-      "image": "https://www.simplilearn.com/ice9/new_logo.svgz",
+      "image": "",
       "title": "",
       "subtitle": "Simplilearn",
       "link": ""
@@ -161,17 +161,71 @@
     }
   },
   {
-    "id": "s1",
-    "domain": "Software Development",
+    "id": "cs1",
+    "domain": "CS Fundamentals",
     "orgLogo": "https://d1g0iq4cbcvjcd.cloudfront.net/topics/images/ScalerTopics_Logo.svg",
     "courseTitle": "Operating System Course: Learn Fundamentals of Operating System",
     "courseLink": "https://www.scaler.com/topics/course/free-operating-system-course/",
-    "bannerImg": "",
+    "bannerImg": "https://www.scaler.com/topics/images/course_listing_312_x_136_srikanth_varma_1_webp",
     "prof": {
-      "image": "https://www.scaler.com/topics/images/srikant-varma_instructor.webp",
+      "image": "",
       "title": "Srikanth Varma",
       "subtitle": "Scaler",
       "link": "https://www.linkedin.com/in/cskvarma/"
+    },
+    "meta": {
+      "description": "",
+      "topics": []
+    }
+  },
+  {
+    "id": "cs2",
+    "domain": "CS Fundamentals",
+    "orgLogo": "https://media.geeksforgeeks.org/gfg-gg-logo.svg",
+    "courseTitle": "Last Minute Notes – Operating Systems",
+    "courseLink": "https://www.geeksforgeeks.org/operating-systems/last-minute-notes-operating-systems/",
+    "bannerImg": "https://media.geeksforgeeks.org/wp-content/uploads/20250122155425570092/state.webp",
+    "prof": {
+      "image": "",
+      "title": "",
+      "subtitle": "GeeksforGeeks",
+      "link": ""
+    },
+    "meta": {
+      "description": "",
+      "topics": []
+    }
+  },
+  {
+    "id": "cs3",
+    "domain": "CS Fundamentals",
+    "orgLogo": "https://media.geeksforgeeks.org/gfg-gg-logo.svg",
+    "courseTitle": "Last Minute Notes – Computer Networks",
+    "courseLink": "https://www.geeksforgeeks.org/computer-networks/last-minute-notes-computer-network/",
+    "bannerImg": "https://media.geeksforgeeks.org/wp-content/uploads/20250117113346005466/OSI-model-8.webp",
+    "prof": {
+      "image": "",
+      "title": "",
+      "subtitle": "GeeksforGeeks",
+      "link": ""
+    },
+    "meta": {
+      "description": "",
+      "topics": []
+    }
+  },
+  {
+    "id": "cs4",
+    "domain": "CS Fundamentals",
+    "orgLogo": "https://media.geeksforgeeks.org/gfg-gg-logo.svg",
+    "courseTitle": "Last Minute Notes – DBMS",
+    "courseLink": "https://www.geeksforgeeks.org/dbms/last-minute-notes-dbms/",
+    "bannerImg": "https://media.geeksforgeeks.org/wp-content/uploads/20220728154854/Armstrongaxiomdrawio-660x211.png",
+    "prof": {
+      "image": "",
+      "title": "",
+      "subtitle": "GeeksforGeeks",
+      "link": ""
     },
     "meta": {
       "description": "",
